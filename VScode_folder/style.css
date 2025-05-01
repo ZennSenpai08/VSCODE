@@ -1,0 +1,149 @@
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #b6dcf0;
+  }
+
+  img {
+    position: static;
+    height: 160px;
+    margin: auto;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #000000;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+  }
+
+  img:hover {
+  border-radius: 50%;
+    border: 2px solid #000000;
+    box-shadow: 3px 3px 8px rgb(50, 133, 241);
+    opacity: 0.8;
+  }
+
+    .container {
+     margin: auto;
+     position: static;
+     max-width: 450px;
+     padding: 80px;
+     background-color: #fff;
+     border-radius: 10px;
+     box-shadow: 3px 8px 12px rgba(0, 0, 0, 0.1);
+    }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0062FF;
+  }
+
+  input[type="email,text"], input[type="password"]{
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 12px 0;
+    border-radius: 10px;
+    border: 1px solid #858585;
+    box-sizing: border-box;
+  }
+
+  .remember-forgot{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    background-color:#0062FF;
+    color: white;
+    padding: 14px 20px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 18px;
+    transition: 0.4s;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    transition: 0.5s;
+    background-color: rgba(69, 160, 73, 1);
+  }
+
+  p{
+    text-align: center;
+  }
+
+  /* The Modal (background) */
+  .modal {
+   display: none; /* Hidden by default */
+   position: fixed; /* Stay in place */
+   z-index: 1; /* Sit on top */
+   padding-top: 100px; /* Location of the box */
+   left: 0;
+   top: 0;
+   width: 100%; /* Full width */
+   height: 100%; /* Full height */
+   overflow: auto; /* Enable scroll if needed */
+   background-color: rgb(0,0,0); /* Fallback color */
+   background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+  }
+
+
+  .modal-content {
+   margin: auto;
+   display: block;
+   width: 80%;
+   max-width: 450px;
+  }
+
+  #caption {
+   margin: auto;
+   display: block;
+   width: 80%;
+   max-width: 700px;
+   text-align: center;
+   font-style: italic;
+   font-size: 30px;
+   color: #ccc;
+   padding: 10px 0;
+   height: 150px;
+  }
+
+  .modal-content, #caption {  
+   animation-name: zoom;
+   animation-duration: 0.5s;
+  }
+
+  @keyframes zoom {
+   from {transform: scale(0.1)} 
+   to {transform: scale(1)}
+  }
+
+  .close {
+   position: absolute;
+   top: 15px;
+   right: 35px;
+   color: #f1f1f1;
+   font-size: 70px;
+   font-weight: bold;
+   transition: 0.3s;
+  }
+
+  .close:hover,
+  .close:focus {
+   color: #bbb;
+   text-decoration: none;
+   cursor: pointer;
+  }
+
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+     width: 100%;
+    }
+  }  
+ 

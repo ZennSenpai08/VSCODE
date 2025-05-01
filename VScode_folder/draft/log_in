@@ -1,0 +1,40 @@
+myImg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    animation-name: backg;
+    animation-duration: 10.5s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes backg{
+
+    100%{background: url(Cute_mei.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    }
+    75%{background: url(nicesu.jpg);
+      background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    }
+    50%{background: url(Fuyutsuki-san.jpeg);
+      background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    }
+    25%{background: url(Salome.jpg);
+      background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+    0%{background: url(Elite_miko.jpg);
+      background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  }
+
+
+  img.style.transform = "scale(2)";

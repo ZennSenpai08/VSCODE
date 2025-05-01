@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Account Login Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <h2>Account Log-in</h2>
+    
+    <div class="gallery">
+      <img id= "myImg" src="Fuyutsuki-san.jpeg" class="main-picture" onclick="openModal(this.src)" alt="Pictures">
+    </div>
+      
+        <div id="pop_up" class="modal" onclick="closeModal()">
+            <span class="close">&times;</span>
+             <div class="modal-content" id="img01">
+              <input type="file" accept="image/*" onchange="previewImage(event)" style="display: none;">  
+               <img src="Fuyutsuki-san.jpeg" class="gallery-image" onclick="changeMainImage(this.src)">
+               <img src="Cute_mei.jpg" class="gallery-image" onclick="changeMainImage(this.src)">
+               <img src="Elite_miko.jpg" class="gallery-image" onclick="changeMainImage(this.src)">
+               <img src="nicesu.jpg" class="gallery-image" onclick="changeMainImage(this.src)">
+               <img src="TT.jpg" class="gallery-image" onclick="changeMainImage(this.src)">
+               <img src="gremlin.jpg" class="gallery-image" onclick="changeMainImage(this.src)">
+               <img src="carving_kiara.jpg" class="gallery-image" onclick="changeMainImage(this.src)">
+               <img src="camping.jpg" class="gallery-image" onclick="changeMainImage(this.src)">
+             </div>
+            <div id="caption"></div>
+          </div>
+
+    <form action="#" method="post">
+
+        <div class="label_username">Username</div>
+         <input type="email,text" autocomplete="username" required>
+        <div class="label_password">Password</div>
+         <input type="password" maxlength="12" required>
+        
+        <input type="submit" value="Login">
+
+        <div class="remember-forgot">
+          <label><input type="checkbox"> Remember me</label>
+          <a href="#">Forgot password</a>
+       </div>
+
+        <div class="register-link">
+          <p> Don't have an Account? <a href="#">Register</a></p>
+        </div>
+
+    </form>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
